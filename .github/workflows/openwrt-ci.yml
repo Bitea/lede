@@ -63,20 +63,14 @@ jobs:
           CONFIG_TARGET_ipq40xx=y
           CONFIG_TARGET_ipq40xx_DEVICE_p2w_r619ac-128m=y
           CONFIG_TARGET_BOARD="ipq40xx"
-          EOF
           # LuCI主题:
-          cat >> .config <<EOF
           CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-netgear=y
           CONFIG_PACKAGE_luci-theme-material=y
-          EOF
           # IPv6支持:
-          cat >> .config <<EOF
           CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
           CONFIG_PACKAGE_ipv6helper=y
-          EOF
           # 额外软件包:
-          cat >> .config <<EOF
           CONFIG_PACKAGE_luci-app-easymesh=y
           CONFIG_PACKAGE_luci-app-familycloud=y
           CONFIG_PACKAGE_luci-app-guest-wifi=y
@@ -98,8 +92,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
-          CONFIG_PACKAGE_luci-app-xlnetacc=y
-          EOF          
+          CONFIG_PACKAGE_luci-app-xlnetacc=y          
+          EOF 
           #
           # ===============================================================
           # 
