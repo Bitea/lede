@@ -93,13 +93,13 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-xlnetacc=y          
-          EOF 
+          EOF
+          
           #
           # ===============================================================
           # 
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
-
 
       - name: Make download
         run: |
